@@ -18,7 +18,7 @@ function App() {
 
   useEffect(()=>{
     if(User){
-      socket.current = io("http://localhost:3500")
+      socket.current = io("https://mental-health-backend-lwrf.onrender.com")
       socket.current.emit("add-user",User._id)
     }
   },[User])
