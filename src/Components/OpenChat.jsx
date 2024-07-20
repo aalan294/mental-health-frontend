@@ -43,12 +43,13 @@ const OpenChat = ({ Chats, User, socket }) => {
         const zp = ZegoUIKitPrebuilt.create(kitToken);
         const url = `${window.location.protocol}//${window.location.host}/#/test${window.location.pathname}?roomID=${roomID}`;
       
-        setMsg(url)
+        setMsg(url);
         setCallUrlGenerated(true); // Mark the URL as generated
       }
     };
     generateCallUrl();
   }, [callUrlGenerated]); // Add callUrlGenerated to the dependency array
+  
 
   useEffect(() => {
     scrollToBottom();
