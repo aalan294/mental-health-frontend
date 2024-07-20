@@ -121,7 +121,7 @@ const OpenChat = ({ Chats, User, socket }) => {
 
   // Function to check if a message contains a URL and render accordingly
   const renderMessageContent = (message) => {
-    const urlPattern = /http:\/\/localhost:3000\/#\/test\/\?roomID=\w+/;
+    const urlPattern = /https:\/\/mental-health-frontend-ft9t.onrender.com\/#\/test\/\?roomID=\w+/;
     const isCallLink = urlPattern.test(message.message);
 
     if (isCallLink) {
